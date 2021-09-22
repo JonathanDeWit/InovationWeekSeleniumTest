@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="body">
+    <header id="head">
+        <h1>Ik ben nieuw hier</h1>
+    </header>
+    <main>
+
+        <section id="gegevens">
+            <form action="/HTML/welkom.html">
+
+                <h3>Persoonlijke gegevens</h3>
+                <label>
+                    <p class="pers_geg">Voornaam</p>
+                    <input id="Voornaam_Input" type="text" class="input" />
+                </label>
+                <label>
+                    <p class="pers_geg">Achternaam</p>
+                    <input id="Achternaam_Input" type="text" class="input" />
+                </label>
+                <label for="phone">
+                    <p class="pers_geg">Telefoonnummer</p>
+                    <input type="tel" id="Phone_Input" name="phone"
+                        placeholder="0xxxxxxxxx" required>
+                </label>
+                <label>
+                    <p class="pers_geg">Geboortedatum</p>
+                    <input type="date" id="Date_Input" placeholder="DD-MM-YYYY" value="01-01-2021" />
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("myDate").value;
+                            document.getElementById("demo").innerHTML = x;
+                        }
+                    </script>
+                </label>
+
+                <label>
+                    <p>Staartnaam</p>
+                </label>
+                <input id="Straat_Input" type="text" class="pers_geg" />
+
+                <label>
+                    <p>Nummer</p>
+                </label>
+                <input id="Nummer_Input" type="number" class="pers_geg" />
+
+                <label>
+                    <p>Boxnummer (Optioneel)</p>
+                </label>
+                <input id="Boxnummer_Input" type="text" class="pers_geg" />
+
+                <label>
+                    <p>Postcode</p>
+                    <input id="Postcode_Input"  type="number" class="pers_geg" />
+                </label>
+
+
+                <h3>Kies een cursus</h3>
+                <p>Opleidingen</p>
+                <select name="opleiding" id="Opleidingen" size="0">
+                    <option value="Toegepaste Informatica">Toegepaste Informatica</option>
+                    <option value="Multimedia">Multimedia</option>
+                    <option value="Graduaat Programmeren">Graduaat Programmeren</option>
+                </select>
+                <p>Vakken</p>
+                <div id="Toegepaste Informatica">
+                    <input class="Toegepaste Informatica-vak" id="IT Essentials_Check" type="checkbox" name="ti" value="IT Essentials">
+                    <label for=""> IT Essentials</label><br>
+                    <input class="Toegepaste Informatica-vak" id="Network_Check" type="checkbox" name="ti" value="Network">
+                    <label for=""> Network Essentials</label><br>
+                    <input class="Toegepaste Informatica-vak" id="Programming Essentials_1_Check" type="checkbox" name="ti" value="Programming Essentials 1">
+                    <label for=""> Programming Essentials 1</label><br>
+                </div>
+                <div id="Multimedia">
+                    <input class="Multimedia-vak" id="Design I_Check" type="checkbox" name="multi" value="Design I">
+                    <label for=""> Design I</label><br>
+                    <input class="Multimedia-vak" id="Development I_Check" type="checkbox" name="multi" value="Development I">
+                    <label for=""> Development I</label><br>
+                    <input class="Multimedia-vak" id="Grow I_Check" type="checkbox" name="multi" value="Grow I">
+                    <label for=""> Grow I</label><br>
+                </div>
+                <div id="Graduaat Programmeren">
+                    <input class="Graduaat Programmeren-vak" id="IT fundamentals_Check" type="checkbox" name="pro" value="IT fundamentals">
+                    <label for=""> IT fundamentals</label><br>
+                    <input class="Graduaat Programmeren-vak" id="Communication_Check" type="checkbox" name="pro" value="Communication">
+                    <label for=""> Communication</label><br>
+                    <input class="Graduaat Programmeren-vak" id="Java Fundamentals_Check" type="checkbox" name="pro" value="Java Fundamentals">
+                    <label for=""> Java Fundamentals</label><br>
+                </div>
+
+            </form>
+            <div class="verder">
+                <button id="Send_bt">Regist</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>
